@@ -16,14 +16,21 @@
   //  console.log("You can ride the coaster!")
 //}
 
-var budget = 300;
-var iPhonePrice = 199.99;
-var payCheck= 200;
-
-if (iPhonePrice < budget || payCheck> 300){
+//var budget = 300;
+//var iPhonePrice = 199.99;
+//var payCheck= 200;
+//alert("Go Bed!!!");
+//if (iPhonePrice < budget || payCheck> 300){
     //if the iphonePrice is less than our budget
-    console.log("We can buy the phone!");
-}else{
+  //  console.log("We can buy the phone!");
+//}else{
 
-    console.log("No phone for you!");
-}
+//    console.log("No phone for you!");
+//}
+
+var age = 9
+var book;
+
+// if the child is under 1o Dr Suese if the more than ten Time Machine
+book= (age<10) ? "Green Eggs and Ham" : "The Time Machine";
+console.log(book);
