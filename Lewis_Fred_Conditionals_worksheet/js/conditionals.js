@@ -20,5 +20,5 @@ if(percentInTank >= 50 ){
 
 }else{
     // code performed if condition is false
-    console.log("You only have" +" "+ percentInTank / tankCapacity + " " + "gallons of gas in your tank, better get gas now while you can!");
+    console.log("You only have" +" "+ percentInTank / tankCapacity + " " + "gallon(s)of gas in your tank, better get gas now while you can!");
 }
