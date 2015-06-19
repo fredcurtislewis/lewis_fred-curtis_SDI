@@ -16,10 +16,10 @@ var numberTravelers = 0;
 
 var airlineTicket = prompt("Enter the amount your airline ticket cost here");
 
-var hotelRoom         = prompt("Enter the amount you will pay for a hotel room. Enter 0 if you will not need a hotel");
-var carCost           = prompt("Enter the price of the rental car. If you do not need one enter 0");
+var hotelRoom         = Number(prompt("Enter the amount you will pay for a hotel room. Enter 0 if you will not need a hotel"));
+var carCost           = Number(prompt("Enter the price of the rental car. If you do not need one enter 0"));
 
-var numberTravelers   = prompt("How many travelers are going total, including yourself?");
+var numberTravelers   = Number(prompt("How many travelers are going total, including yourself?"));
 var ticketTotal       = numberTravelers *  airlineTicket;
 var expensesTotal     = hotelRoom + carCost;
 var tripExpense       = ticketTotal + expensesTotal;
