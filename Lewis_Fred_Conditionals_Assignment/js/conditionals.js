@@ -12,7 +12,7 @@ var numberTravelers = 0;
 
 
 
-//prompts
+//prompts to get the info for my calculator
 
 var airlineTicket = prompt("Enter the amount your airline ticket cost here");
 
