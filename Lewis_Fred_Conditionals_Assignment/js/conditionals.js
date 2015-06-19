@@ -2,28 +2,43 @@
 // SDI Conditionals Assignment
 // 18 June 2015
 
-//Moving costs calculator to move to Hawaii from Seattle Washington
-//variables shipping a car, family members in family times cost of airfare, shipping of household goods or selling all your stuff and bringing just a suitcase,first months rent and deposit on a new place, deposit on electric and water
+// variables
 
-var shippingVehicle  = true;
-var shippingCost     = 1500;
-var numberInFamily   = 4;
-var airfare          = 600;
-var totalAirfare     = 0;
-var shippingHouse    = false;
-var houseCost        = 0;
-var rentDeposit      = 4000;
-var electricWater    = 300;
-var total            = houseCost + shippingCost + totalAirfare + rentDeposit + electricWater;
-//prompts to gain information for my calculator
+var airlineTicket   = 600;
+var hotelRoom       = 100;
+var carCost         = 0;
+var food            = 400;
+var numberTravelers = 3;
 
-var shippingVehicle   = prompt("I will be shipping a vehicle? True or False");
-if(shippingVehicle = true){
-    //if the user selects true 1500 will be added to total
-    var shippingCost  = 1500
-    console.log("Your total vehicle cost is" + " " + shippingCost + " " + "!!!");
-    
+
+
+//prompts
+
+//var airlineTicket = prompt("Enter the amount your airline ticket cost here");
+//var hotelRoom     = prompt("Will you rent a hotel room? Enter true for yes and false for no");
+//var rentalCar     =prompt("Will you rent a car? Enter true for yes and false for no");
+
+var hotelRoom         = prompt("Enter the amount you will pay for a hotel room. Enter 0 if you will not need a hotel");
+var carCost           = prompt("Enter the price of the rental car. If you do not need one enter 0");
+
+var numberTravelers   = prompt("How many travelers are going total, including yourself?");
+var ticketTotal       = numberTravelers *  airlineTicket;
+var expensesTotal     = hotelRoom + carCost;
+var tripExpense       = ticketTotal + expensesTotal;
+var totalTrip         = tripExpense + food;
+console.log("Your total cost for Hawaii is " + totalTrip + " " + "!!!!!!");
+
+// Operators (Ternary and logical and if / else)
+
+(carCost > 0) ? console.log("Car rental costs" + " " + carCost + " " + "dollars!!"):console.log("No car rental costs!!!");
+
+if(hotelRoom > 0){
+    // enter  amount for hotel for five Days in Hawaii
+    console.log("Your total cost for lodging is" + " " + hotelRoom + " " + " dollars!!")
+}else{
+    console.log("Your total cost for lodging is zero dollars!!")
 }
 
 
-// if or else
+
+alert("Your total cost to vacation in Hawaii is" + " " + totalTrip  +  " " + "dollars!!!!");
