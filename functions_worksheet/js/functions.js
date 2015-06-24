@@ -5,26 +5,40 @@
 
 // Variables & Prompts
 
-var radius = 10;
-var pi     = 3.14;
-var myCircumference = prompt("What is the radius of the circle?");
+var pi              = 3.14;   // the value of pi
+var myRadius        = prompt("What is the radius of the circle?"); // where the user inputs radius
+var myCircumference = 2 * pi * myRadius; // the formula for circumference from a known radius
 
 // functions
 
-function calculateCirc(circumference){
+function circValidation(circumference){   // function attempt
 
-    console.log("You entered" + myCircumference);
+    // console.log("Your circumference is  " + circumference);
+
+    var timesClicked = 1; // counting the number of times clicked
+
+    while (circumference === ""){  // if the user does not input data
+
+        circumference = prompt("Please do not leave this blank or we cannot calculate your circumference!!"); // prompt displayed if nothing is input ( not working correctly
+
+        timesClicked++; // adds one to every click with no data
+
+        if (timesClicked === 5){ // a max of five clicks before it stops
+
+        }
+
+    }
+
+    return circumference; // the return gives circumference back to myCircumference
 
 
 }
 
-
-
 // main code
-calculateCirc();
+myCircumference = circValidation(myCircumference); // returning the return to myCircumference
 
-var circumference = calculateCirc(2 * pi *radius);
-console.log("The circumference of the cirlce is  " +circumference);
+
+console.log("The circumference of the cirlce is  " + myCircumference);  // displays the radius of the cirlce on the console.
 
 
 // alert("Works!!!");
