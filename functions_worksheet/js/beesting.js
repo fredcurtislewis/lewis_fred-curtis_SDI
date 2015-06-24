@@ -6,39 +6,26 @@
 
 var deadlyStings = 8.666666667;
 var myWeight     = prompt("Please enter your weight in pounds:");
-var myDeath      = deadlyStings * myWeight; // the formula for amount of bee stings it takes to kill you.
+
+
 
 // functions
 
 function stingValidation(stings){   // function attempt
 
+    stings      = deadlyStings * myWeight; // the formula for amount of bee stings it takes to kill you.
+    console.log("The number of bee stings it takes to kill you is;   " + stings); // prints to verify the function is working properly
 
-    console.log("The number of bee stings it takes to kill you is;   " + stings);
-
-    var timesClicked = 1; // counting the number of times clicked
-
-    while (stings === ""){  // if the user does not input data
-
-        stings = prompt("Please do not leave this blank or we cannot calculate how many stings will kill you!!"); // prompt displayed if nothing is input ( not working correctly
-
-        timesClicked++; // adds one to every click with no data
-
-        if (timesClicked === 5){ // a max of five clicks before it stops
-
-        }
-
-    }
-
-    return stings; // the return gives stings back to myDeath
+    return stings; // the return gives stings back to myWeight
 
 
 }
 
 // main code
-myDeath = stingValidation(myDeath); // returning the return to myDeath
+myWeight = stingValidation(myWeight); // returning the return to myWeight
 
 
-console.log("The number of stings it takes to kill you is  " + myDeath);  // displays the radius of the cirlce on the console.
+console.log("The number of stings it takes to kill you is  " + myWeight);  // displays the number of bee stings it takes to kill you on the console.
 
 
-// alert("Works!!!");
+// alert("Works!!!"); test alert
