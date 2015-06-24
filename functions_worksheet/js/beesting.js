@@ -15,3 +15,21 @@ var myDeath      = deadlyStings * myWeight; // the formula for amount of beestin
 function stingValidation(stings){   // function attempt
 
 
+    console.log("The number of bee stings it takes to kill you is;   " + stings);
+
+    var timesClicked = 1; // counting the number of times clicked
+
+    while (stings === ""){  // if the user does not input data
+
+        stings = prompt("Please do not leave this blank or we cannot calculate how many stings will kill you!!"); // prompt displayed if nothing is input ( not working correctly
+
+        timesClicked++; // adds one to every click with no data
+
+        if (timesClicked === 5){ // a max of five clicks before it stops
+
+        }
+
+    }
+
+    return stings; // the return gives stings back to myDeath
+
