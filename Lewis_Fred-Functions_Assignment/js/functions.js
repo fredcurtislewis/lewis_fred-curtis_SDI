@@ -5,46 +5,53 @@
 
 // Variables & Prompts
 
-var myLottery        = prompt("Enter Florida or Powerball"); // where the user inputs whether they want Florida lottery or Powerball numbers
-
+//var myLottery        = prompt("Enter Florida or Powerball"); // where the user inputs whether they want Florida lottery or Powerball numbers
+var floridaNum;
 
 // functions
 
-function lotteryValidation(lotteryNumbers){   // function attempt
+//function lotteryValidation(lotteryNumbers){   // function attempt
 
 
 
-   if(lotteryNumbers === "Florida"){
+   //if(lotteryNumbers === "Florida"){
 
-       function floridaLotto (min, max, num) {
+function floridaLotto (min, max, num) {
 
-           var lotteryArray     = [];
-           for (var f = 0; f < num; f++) {
+    var lotteryArray     = [];
 
-           var floridaLottery = Math.random() * (max - min) + min;
-           lotteryArray [f] = Math.round(floridaLottery);
-           console.log("The Florida numbers are  " + floridaLottery + "!");
-       }
-
-       }
-       return lotteryArray;
-
-   }else{
-       var powerBall        = Math.random() * (42-1)+1;
-       powerBall            = Math.round(powerBall);
-       console.log("The numbers are " + powerBall + " and the Powerball is " + "!");
-
-   }
+    for (var f = 0; f < num; f++) {
+        var floridaLottery = Math.random() * (max - min) + min;
+        lotteryArray [f] = Math.round(floridaLottery);
+        //console.log("The Florida numbers are  " + floridaLottery + "!");
+    }
+    return lotteryArray;
 
 
-   return lotteryNumbers; // the return gives lotteryNumbers back to myLottery
+
+
+           //}
+
+
+
+   //}else{
+      // var powerBall        = Math.random() * (42-1)+1;
+    //   powerBall            = Math.round(powerBall);
+    //   console.log("The numbers are " + powerBall + " and the Powerball is " + "!");
+
+   //}
+
+
+   //return lotteryNumbers; // the return gives lotteryNumbers back to myLottery
 
 }
 
 // main code
 
-floridaLotto();
-myLottery            = lotteryValidation(myLottery); // returning the return to myLottery
+floridaNum           = floridaLotto(1, 53, 6);
+console.log("Your Florida Lottery numbers are " + floridaNum + "!");
+
+// myLottery            = lotteryValidation(myLottery);// returning the return to myLottery
 // console.log("The lottery numbers are  " + myLottery);  // displays the lottery numbers choosen
 
 
