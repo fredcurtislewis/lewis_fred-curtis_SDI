@@ -14,8 +14,13 @@ function lotteryValidation(lotteryNumbers){   // function attempt
 
    if(lotteryNumbers === "Florida"){
 
-      console.log("The Florida numbers are  " + lotteryNumbers + "!");
+       var floridaLottery   =  Math.random();
+       console.log("The Florida numbers are  " + floridaLottery + "!");
 
+
+   }else{
+       var powerBall        = Math.random(1-36)
+       console.log("The numbers are " + " and the Powerball is " + "!");
 
    }
 
