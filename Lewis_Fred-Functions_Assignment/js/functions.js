@@ -12,15 +12,27 @@ var myLottery        = prompt("Enter Florida or Powerball"); // where the user i
 
 function lotteryValidation(lotteryNumbers){   // function attempt
 
+
+
    if(lotteryNumbers === "Florida"){
 
-       var floridaLottery   =  Math.random();
-       console.log("The Florida numbers are  " + floridaLottery + "!");
+       function floridaLotto (min, max, num) {
 
+           var lotteryArray     = [];
+           for (var f = 0; f < num; f++) {
+
+           var floridaLottery = Math.random() * (max - min) + min;
+           lotteryArray [f] = Math.round(floridaLottery);
+           console.log("The Florida numbers are  " + floridaLottery + "!");
+       }
+
+       }
+       return lotteryArray;
 
    }else{
-       var powerBall        = Math.random(1-36)
-       console.log("The numbers are " + " and the Powerball is " + "!");
+       var powerBall        = Math.random() * (42-1)+1;
+       powerBall            = Math.round(powerBall);
+       console.log("The numbers are " + powerBall + " and the Powerball is " + "!");
 
    }
 
@@ -31,9 +43,9 @@ function lotteryValidation(lotteryNumbers){   // function attempt
 
 // main code
 
-
+floridaLotto();
 myLottery            = lotteryValidation(myLottery); // returning the return to myLottery
-console.log("The lottery numbers are  " + myLottery);  // displays the lottery numbers choosen
+// console.log("The lottery numbers are  " + myLottery);  // displays the lottery numbers choosen
 
 
 //alert("Does it work?"); test to see if my js is working properly
