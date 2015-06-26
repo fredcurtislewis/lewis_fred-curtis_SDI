@@ -5,7 +5,7 @@
 
 // Variables & Prompts
 
-var myLottery        = prompt("Enter Florida or Powerball"); // where the user inputs whether they want Florida lottery or Powerball numbers
+var myLottery        = prompt("Enter Florida or Powerball...case sensitive"); // where the user inputs whether they want Florida lottery or Powerball numbers
 var floridaNum;
 var powerBall;
 var thePowerBall
